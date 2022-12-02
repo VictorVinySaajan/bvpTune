@@ -169,13 +169,3 @@ class bvpFineTuner:
             self.visualizer.visualize3d(dataframe)
         else:
             print('Dataframe is not in right format. Please provided the dataframe returned by bvpFineTuner functions')
-
-def main():
-    tuner = bvpFineTuner()
-    tuner.setTrailNumber(500)
-
-    optimizedSettings = tuner.getOptimalResiduumAndODEevals(test_case_type=8)
-    tuner.visualize(optimizedSettings)
-
-if __name__=='__main__':
-    main()
