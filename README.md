@@ -43,3 +43,26 @@ The functions provide by the library are listed as folows:
        
 ### 10)  visualize(dataframe)
         visualize the 2d/3d pareto front plots for the provided dataframe returned by the optimization functions.
+        
+        
+**Reference Boundary Value Problems**
+
+| Test Case Type | Refrence Problem Number | Problem Type
+| ----------- | ----------- |----------- |
+|1|1|Linear|
+|2|3|Linear|
+|3|4|Linear|
+|4|7|Linear|
+|5|19|Non-linear|
+|6|20|Non-linear|
+|7|22|Non-linear|
+|8|23|Non-linear|
+|9|24|Non-linear|
+|10|33|Non-linear|
+
+The reference problems are selected from [[1]](#1).
+
+## References
+<a id="1">[1]</a> 
+Soetaert, Karline and Cash, Jeff and Mazzia, Francesca. (2010). 
+Package bvpSolve, solving testproblems.
