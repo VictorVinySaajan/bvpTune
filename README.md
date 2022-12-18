@@ -47,7 +47,7 @@ The functions provide by the library are listed as folows:
         
 **Reference Boundary Value Problems**
 
-| Test Case Type | Refrence Problem Number | Problem Type
+| test_case_type | Refrence Problem Number | Problem Type
 | ----------- | ----------- |----------- |
 |1|1|Linear|
 |2|3|Linear|
