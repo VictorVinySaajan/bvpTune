@@ -9,6 +9,8 @@ The library uses machine learning regression model that maps the numerical setti
 solver performance criteria for faster predictions. This model is then used to optimize the settings 
 using the optuna library[[2]](#2).
 
+<img src="https://github.com/VictorVinySaajan/bvpTune/blob/main/library_flow.png">
+
 The functions provide by the library are listed as folows:
 
  ### 1)  getOptimalGridPoints(test_case_type):
