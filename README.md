@@ -1,11 +1,13 @@
 # bvpTune
-Machine learning based library for tuning the numerical settings of bvp4c solver from MATLAB.
+Machine learning based library for tuning the numerical settings of boundary value problem (BVP) solver.
 
-This library can be used to find the optimal numerical settings of the
-bv4c, a boundary value problem solver from MATLAB based on the type of the problem.
+This library can be used to find the optimal numerical settings of the BVP solver.
+This solver is a self-implemented C++ version of the bvp4c solver from MATLAB[[1]](#1) that uses a Newton-Armijo method instead of a
+simplified Newton method for solving the system of non-linear equations.
+
 The library uses machine learning regression model that maps the numerical settings to
-solver performance criteria for faster predictions. This model s then used to optimize the settings 
-using the optuna library.
+solver performance criteria for faster predictions. This model is then used to optimize the settings 
+using the optuna library[[2]](#2).
 
 The functions provide by the library are listed as folows:
 
@@ -60,9 +62,17 @@ The functions provide by the library are listed as folows:
 |9|24|Non-linear|
 |10|33|Non-linear|
 
-The reference problems are selected from [[1]](#1).
+The reference problems are selected from [[3]](#3).
 
 ## References
-<a id="1">[1]</a> 
+<a id="1">[1]</a>
+Kierzenka, Jacek and Shampine, Lawrence F, ``A BVP solver based on residual control and the Maltab PSE``, ACM Transactions on Mathematical Software (TOMS)., ACM New York, NY, USA, vol. 27, no. 3, pp. 299--316, 2001.
+
+<a id="2">[2]</a>
+Akiba, Takuya and Sano, Shotaro and Yanase, Toshihiko and Ohta, Takeru and Koyama, Masanori, ``Optuna: A Next-generation Hyperparameter Optimization Framework``, Proceedings of the 25rd {ACM} {SIGKDD} International Conference on Knowledge Discovery and Data Mining., pp. 2623--2631, 2019.
+
+<a id="3">[3]</a> 
 Soetaert, Karline and Cash, Jeff and Mazzia, Francesca. (2010). 
-Package bvpSolve, solving testproblems.
+``Package bvpSolve, solving testproblems``.
+
+
