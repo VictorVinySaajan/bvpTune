@@ -1,4 +1,4 @@
-# bvpTuner
+# bvpTune
 Machine learning based library for tuning the numerical settings of bvp4c solver from MATLAB.
 
 This library can be used to find the optimal numerical settings of the
