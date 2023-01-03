@@ -64,6 +64,24 @@ The functions provide by the library are listed as folows:
 
 The reference problems are selected from [[3]](#3).
 
+# Installation
+
+The library can be installed using the following command.
+
+``pip install bvpTune``
+
+# Usage
+
+import the library.
+
+``from bvpTune import bvpFineTuner``
+
+create the tuner object.
+
+``tuner = bvpFineTuner()``
+
+use the tuner object to call the functions listed above.
+
 ## References
 <a id="1">[1]</a>
 Kierzenka, Jacek and Shampine, Lawrence F, ``A BVP solver based on residual control and the Maltab PSE``, ACM Transactions on Mathematical Software (TOMS)., ACM New York, NY, USA, vol. 27, no. 3, pp. 299--316, 2001.
